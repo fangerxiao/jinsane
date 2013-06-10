@@ -153,7 +153,8 @@ function CreateMiner(redlist,width,height,parent,doneCallback)
 
 }
 function done(){
-		alert('hello jsj yes I Love You~');
+		alert('hello jsj!!!!yes I Love You~');
 		alert('I Love You~');
-		alert('I Love You~');		
+		alert('I Love You~');
+		setTimeout("alert('Do You Know That You Are Amazingly Beautiful And Kind?')",2000);
 }
