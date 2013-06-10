@@ -172,12 +172,12 @@ function iloveyou2(){
 	setTimeout("alert('I Love You!');ama();",1000);
 }
 function ama(){
-	setTimeout("alert('Do You Know That You Are Amazingly Beautifuy and Kind?!');cra();",1000);
+	setTimeout("alert('Do You Know That You Are Amazingly Beautiful and Kind?!');cra();",1000);
 }
 function cra(){
 	setTimeout("alert('And I am CRAZY about You?!');lo();",1000);
 }
 function lo(){
-	setTimeout("alert('I <3 U');;",1000);
+	setTimeout("alert('I <3 U');",1000);
 }
 
