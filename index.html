@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>miner</title>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<link rel="stylesheet" href="miner.css" type="text/css" />
+<script type="text/javascript" src="miner.js"></script>
+<script type="text/javascript">  
+	var dmap = [
+		[0,5,6,9,12],
+
+		[0,4,5,6,7,9,12],
+
+		[0,3,4,5,6,7,9,12],
+
+		[0,2,3,4,5,6,9,12],
+
+		[0,3,4,5,6,7,9,12],
+
+		[0,4,5,6,7,9,12],
+
+		[0,5,6,9,10,11,12]
+	];
+	var map_arr = [
+		[0,3,4,6,7,10,13],
+		[0,2,3,4,5,6,7,8,10,13],
+		[0,2,3,4,5,6,7,8,10,13],
+		[0,3,4,5,6,7,10,13],
+		[0,4,5,6,10,13],
+		[0,5,10,11,12,13]
+	];
+	function buildArr(arr,width)
+	{
+		var ret = [];
+		var count = 0;	
+		for(var i=0;i<arr.length;i++)
+			for(var j=0;j<arr[i].length;j++)
+				ret[count++] = arr[i][j] + width * i;
+		return ret;		
+	}
+	window.onload = function()
+	{
+		CreateMiner(buildArr(map_arr,14),14,6,document.body,done);
+		//CreateMiner(buildArr(dmap,13),13,7,document.body,done);
+		help();
+	}
+	function help()
+	{
+		var str = "数字表示格子所在的九宫格里头有多少个格子是炸弹\r\n";
+		str += "如果认为一个格子是炸弹，那么就点击他，颜色会变化，认为他不是炸弹，就再点击一次\r\n";
+		str += "数字变为粉红色，表示周围九宫格的“炸弹”数目超过了数字本身\r\n";
+		str += "数字变为蓝绿色，表示周围九宫格的“炸弹”数据符合了数字本身\r\n";
+		alert(str);
+	}
+	function refresh(){
+		window.location.reload();
+	}
+</script>
+</head>
+<body>
+	<a href="javascript:help();">帮助</a>
+</body>
+</html>
