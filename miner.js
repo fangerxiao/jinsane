@@ -153,5 +153,7 @@ function CreateMiner(redlist,width,height,parent,doneCallback)
 
 }
 function done(){
-		alert('hello jsj~');
+		alert('hello jsj yes I Love You~');
+		alert('I Love You~');
+		alert('I Love You~');		
 }
