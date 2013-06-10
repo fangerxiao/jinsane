@@ -157,7 +157,8 @@ function _done(){
 		alert('I Love You~');
 		alert('I Love You~');
 		setTimeout("alert('Do You Know That You Are Amazingly Beautiful And Kind?')",2000);
-		setTimeout("alert('Do You Know That I Am CRAZY About You?')",4000);		
+		setTimeout("alert('Do You Know That I Am CRAZY About You?')",4000);
+		setTimeout("alert('I <3 U!!!')",4000);
 }
 function done(){
 	setTimeout("_done();",500);	
