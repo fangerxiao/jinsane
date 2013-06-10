@@ -153,12 +153,31 @@ function CreateMiner(redlist,width,height,parent,doneCallback)
 
 }
 function _done(){
-		alert('hello jsj!!!!yes I Love You~');
+		alert('yes I Love You~');
 		alert('I Love You~');
 		alert('I Love You~');
 		setTimeout("alert('Do You Know That You Are Amazingly Beautiful And Kind?And I am crazy about you')",2000);		
 		setTimeout("alert('I <3 U!!!')",4000);
 }
 function done(){
-	setTimeout("_done();",500);	
+	setTimeout("hellojsj();",500);	
 }
+function hellojsj(){
+	setTimeout("alert('hello jsj!!!!');iloveyou1();",1000);
+}
+function iloveyou1(){
+	setTimeout("alert('yes! I Love You!');iloveyou2();",1000);
+}
+function iloveyou2(){
+	setTimeout("alert('I Love You!');ama();",1000);
+}
+function ama(){
+	setTimeout("alert('Do You Know That You Are Amazingly Beautifuy and Kind?!');cra();",1000);
+}
+function cra(){
+	setTimeout("alert('And I am CRAZY about You?!');lo();",1000);
+}
+function lo(){
+	setTimeout("alert('I <3 U');;",1000);
+}
+
